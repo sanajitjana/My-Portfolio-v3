@@ -1,11 +1,11 @@
 {
-  "name": "my-portfolio-2",
+  "name": "my-gatsby-portfolio",
   "description": "",
   "version": "1.0.0",
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "author": "Sanajit Jana <mail.sanajitjana@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/sanajitjana/sanajitjana.github.io"
   },
   "keywords": [],
   "license": "MIT",
@@ -21,12 +21,8 @@
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,css,json,md}": [
-      "prettier --write"
-    ],
-    "*.js": [
-      "eslint --fix"
-    ]
+    "*.{js,css,json,md}": ["prettier --write"],
+    "*.js": ["eslint --fix"]
   },
   "dependencies": {
     "animejs": "^3.1.0",
