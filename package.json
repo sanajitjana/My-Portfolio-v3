@@ -1,15 +1,13 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "my-portfolio-2",
+  "description": "",
   "version": "1.0.0",
   "author": "Brittany Chiang <brittany.chiang@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/bchiang7/v4"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": [],
   "license": "MIT",
   "browserslist": "> 0.25%, not dead",
   "scripts": {
