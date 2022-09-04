@@ -3,7 +3,7 @@ date: "2022-09-20"
 title: "Web Developer"
 company: "Uaguria"
 location: "WB, India"
-range: "Sep 2022 - Feb 2022"
+range: "Sep 2020 - Feb 2022"
 url: "https://www.uaguria.com/"
 ---
 
