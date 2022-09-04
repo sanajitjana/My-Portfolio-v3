@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import styled from 'styled-components';
-import { srConfig } from '@config';
-import sr from '@utils/sr';
-import { Icon } from '@components/icons';
-import { usePrefersReducedMotion } from '@hooks';
+import React, { useState, useEffect, useRef } from "react";
+import { Link, useStaticQuery, graphql } from "gatsby";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import styled from "styled-components";
+import { srConfig } from "@config";
+import sr from "@utils/sr";
+import { Icon } from "@components/icons";
+import { usePrefersReducedMotion } from "@hooks";
 
 const StyledProjectsSection = styled.section`
   display: flex;
@@ -123,7 +123,7 @@ const StyledProject = styled.li`
       position: static;
 
       &:before {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         z-index: 0;
@@ -203,7 +203,9 @@ const Projects = () => {
 
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealArchiveLink.current, srConfig());
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+    revealProjects.current.forEach((ref, i) =>
+      sr.reveal(ref, srConfig(i * 100))
+    );
   }, []);
 
   const GRID_LIMIT = 6;
@@ -211,7 +213,7 @@ const Projects = () => {
   const firstSix = projects.slice(0, GRID_LIMIT);
   const projectsToShow = showMore ? projects : firstSix;
 
-  const projectInner = node => {
+  const projectInner = (node) => {
     const { frontmatter, html } = node;
     const { github, external, title, tech } = frontmatter;
 
@@ -224,7 +226,12 @@ const Projects = () => {
             </div>
             <div className="project-links">
               {github && (
-                <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
+                <a
+                  href={github}
+                  aria-label="GitHub Link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Icon name="GitHub" />
                 </a>
               )}
@@ -234,7 +241,8 @@ const Projects = () => {
                   aria-label="External Link"
                   className="external"
                   target="_blank"
-                  rel="noreferrer">
+                  rel="noreferrer"
+                >
                   <Icon name="External" />
                 </a>
               )}
@@ -247,7 +255,10 @@ const Projects = () => {
             </a>
           </h3>
 
-          <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
+          <div
+            className="project-description"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
         </header>
 
         <footer>
@@ -267,7 +278,11 @@ const Projects = () => {
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
+      <Link
+        className="inline-link archive-link"
+        to="/archive"
+        ref={revealArchiveLink}
+      >
         view the archive
       </Link>
 
@@ -287,13 +302,17 @@ const Projects = () => {
                   key={i}
                   classNames="fadeup"
                   timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
-                  exit={false}>
+                  exit={false}
+                >
                   <StyledProject
                     key={i}
-                    ref={el => (revealProjects.current[i] = el)}
+                    ref={(el) => (revealProjects.current[i] = el)}
                     style={{
-                      transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
-                    }}>
+                      transitionDelay: `${
+                        i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0
+                      }ms`
+                    }}
+                  >
                     {projectInner(node)}
                   </StyledProject>
                 </CSSTransition>
@@ -303,7 +322,7 @@ const Projects = () => {
       </ul>
 
       <button className="more-button" onClick={() => setShowMore(!showMore)}>
-        Show {showMore ? 'Less' : 'More'}
+        Show {showMore ? "Less" : "More"}
       </button>
     </StyledProjectsSection>
   );
