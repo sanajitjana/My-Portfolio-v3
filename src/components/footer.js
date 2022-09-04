@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Icon } from '@components/icons';
-import { socialMedia } from '@config';
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { Icon } from "@components/icons";
+import { socialMedia } from "@config";
 
 const StyledFooter = styled.footer`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -70,23 +70,23 @@ const StyledCredit = styled.div`
 const Footer = () => {
   const [githubInfo, setGitHubInfo] = useState({
     stars: null,
-    forks: null,
+    forks: null
   });
 
   useEffect(() => {
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== "production") {
       return;
     }
-    fetch('https://api.github.com/repos/bchiang7/v4')
-      .then(response => response.json())
-      .then(json => {
+    fetch("https://api.github.com/repos/sanajitjana/sanajitjana.github.io")
+      .then((response) => response.json())
+      .then((json) => {
         const { stargazers_count, forks_count } = json;
         setGitHubInfo({
           stars: stargazers_count,
-          forks: forks_count,
+          forks: forks_count
         });
       })
-      .catch(e => console.error(e));
+      .catch((e) => console.error(e));
   }, []);
 
   return (
@@ -105,8 +105,8 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <a href="https://github.com/bchiang7/v4">
-          <div>Designed &amp; Built by Brittany Chiang</div>
+        <a href="https://github.com/sanajitjana/sanajitjana.github.io">
+          <div>Made with ❤️ by Sanajit Jana</div>
 
           {githubInfo.stars && githubInfo.forks && (
             <div className="github-stats">
@@ -127,7 +127,7 @@ const Footer = () => {
 };
 
 Footer.propTypes = {
-  githubInfo: PropTypes.object,
+  githubInfo: PropTypes.object
 };
 
 export default Footer;
