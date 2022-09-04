@@ -19,8 +19,8 @@ module.exports = {
       url: "https://www.instagram.com/sanajitjana01"
     },
     {
-      name: "LeetCode",
-      url: "https://leetcode.com/sanajitjana"
+      name: "LinkTree",
+      url: "https://sanajitjana.github.io/linktree"
     }
   ],
 
