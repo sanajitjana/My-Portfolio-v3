@@ -147,8 +147,8 @@ const About = () => {
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at in
-              a <a href="https://uaguria.com/">start-up</a> and with a{" "}
+              Fast-forward to today, and I had the privilege of working at in a{" "}
+              <a href="https://uaguria.com/">start-up</a> and with a{" "}
               <a href="https://patelgtech.com//">
                 news-magazine republication agency.
               </a>
