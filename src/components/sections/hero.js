@@ -66,7 +66,7 @@ const Hero = () => {
       <p>
         I’m a software engineer specializing in building exceptional digital
         experiences. Currently, I’m focused on learning Java language and Data
-        structure and algorithm.
+        structure algorithm.
       </p>
     </>
   );

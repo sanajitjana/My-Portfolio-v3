@@ -142,16 +142,16 @@ const About = () => {
             <p>
               Hello! My name is Sanajit and I enjoy creating things that live on
               the internet. My interest in web development started back in 2017
-              when I decided to take admission in BCA and learn coding — after
+              when I decided to take admission in BCA to learn coding — after
               that I start from learning about HTML &amp; CSS!
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{" "}
+              Fast-forward to today, and I’ve had the privilege of working at in
+              a <a href="https://uaguria.com/">start-up</a> and with a{" "}
               <a href="https://patelgtech.com//">
-                a news-magazine republication agency
+                news-magazine republication agency.
               </a>
-              , <a href="https://uaguria.com/">a start-up</a>.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
