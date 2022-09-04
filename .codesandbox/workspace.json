@@ -8,7 +8,7 @@
         {
           "id": "codesandbox.browser",
           "options": {
-            "port": 8000
+            "port": 34405
           },
           "closeable": true
         }

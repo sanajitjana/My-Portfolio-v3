@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 import {
   IconAppStore,
   IconBookmark,
@@ -14,38 +14,38 @@ import {
   IconLogo,
   IconPlayStore,
   IconStar,
-  IconTwitter,
-} from '@components/icons';
+  IconTwitter
+} from "@components/icons";
 
 const Icon = ({ name }) => {
   switch (name) {
-    case 'AppStore':
+    case "AppStore":
       return <IconAppStore />;
-    case 'Bookmark':
+    case "Bookmark":
       return <IconBookmark />;
-    case 'Codepen':
+    case "Codepen":
       return <IconCodepen />;
-    case 'External':
+    case "External":
       return <IconExternal />;
-    case 'Folder':
+    case "Folder":
       return <IconFolder />;
-    case 'Fork':
+    case "Fork":
       return <IconFork />;
-    case 'GitHub':
+    case "GitHub":
       return <IconGitHub />;
-    case 'Instagram':
+    case "Instagram":
       return <IconInstagram />;
-    case 'Linkedin':
+    case "Linkedin":
       return <IconLinkedin />;
-    case 'Loader':
+    case "Loader":
       return <IconLoader />;
-    case 'Logo':
+    case "Logo":
       return <IconLogo />;
-    case 'PlayStore':
+    case "PlayStore":
       return <IconPlayStore />;
-    case 'Star':
+    case "Star":
       return <IconStar />;
-    case 'Twitter':
+    case "Twitter":
       return <IconTwitter />;
     default:
       return <IconExternal />;
@@ -53,7 +53,7 @@ const Icon = ({ name }) => {
 };
 
 Icon.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
 };
 
 export default Icon;
