@@ -5,7 +5,7 @@
   sanajitjana.github.io - v2
 </h1>
 <p align="center">
-  The fourth iteration of <a href="https://sanajitjana.github.io" target="_blank">sanajitjana.github.io</a> built and hosted with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>
+  The second iteration of <a href="https://sanajitjana.github.io" target="_blank">sanajitjana.github.io</a> built and hosted with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>
 </p>
 <p align="center">
   Previous versions:
@@ -19,17 +19,11 @@
 
 <!-- ![demo](https://raw.githubusercontent.com/bchiang7/v4/main/src/images/demo.png) -->
 
-<!-- ## 🚨 Forking this repo (please read!) -->
+## 🚨 Forking this repo (please read!)
 
-<!-- Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
+This repositoty is fully Open Source, Feel free to clone this, yes you heard it right - you can fork this repo. Before that please give me a star, fork it and customized as per your wish. If you face any dificulty you can connect with me <a href="mailto:mail.sanajitjana@gmail.com">mail.sanajitjana@gmail.com</a>.
 
-I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
-
-Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [Gatsby docs](https://www.gatsbyjs.org/docs/).
-
-### TL;DR
-
-Yes, you can fork this repo. Please give me proper credit by linking back to [brittanychiang.com](https://brittanychiang.com). Thanks! -->
+<br/>
 
 ## 🛠 Installation & Set Up
 
@@ -57,6 +51,8 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [br
    npm start
    ```
 
+<br/>
+
 ## 🚀 Building and Running for Production
 
 1. Generate a full static production build
@@ -70,6 +66,8 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [br
    ```sh
    npm run serve
    ```
+
+<br/>
 
 ## 🎨 Color Reference
 
